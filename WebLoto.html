@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <title>WebLoto</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="margin: auto;">
+                    <img src="./Assets/icons8-trevo-50.png" alt="" width="25" height="25" class="d-inline-block align-text-top" style="margin-right: 5px;"> Web Loto
+                </a>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <section id="section1">
+        <div>
+            <label for="fnum">Números de 1 a 25:</label>
+            <input style="margin: auto; margin-top: 10px;" min="0" max="25" class="form-control" type="number" name="fnum" id="fnum">
+            <button type="button" class="btn" id="addButton" onclick="Adicionar()">Adicionar</button>
+            <br><br><select name="flista" id="flista" size="15"></select>
+            <select name="flista2" id="flista2" size="15">
+            </select></div>
+        <br>
+        <button type="button" class="btn" onclick="Finalizar()">Finalizar seleção</button>
+        <button type="button" class="btn" onclick="LimparListas()">Limpar Listas</button>
+        <!-- <button type="button" class="btn" onclick="LimparLista2()">Limpar 2º Lista</button> -->
+        </div>
+
+        <hr>
+        <div id="res">
+            <!-- aqui está exibindo a quantidade de números ímapares e pares. -->
+        </div>
+        <hr>
+
+        <div class="selectNumbersList">
+            <div>
+                <label for="qtdNumbersYes">Quantidade da 1º Lista:</label>
+                <input type="number" style="width: 100px; margin: auto;" min="0" max="15" class="form-control" name="qtdNumbersYes" id="qtdNumbersYes">
+            </div>
+            <div>
+                <label for="qtdJogos">Quantidade de Jogos:</label>
+                <input type="number" style="width: 100px; margin: auto;" min="0" max="15" class="form-control" id="qtdJogos">
+            </div>
+            <div>
+                <label for="qtdNumbersNot">Quantidade da 2º Lista:</label>
+                <input type="number" style="width: 100px; margin: auto;" min="0" max="10" class="form-control" name="qtdNumbersNot" id="qtdNumbersNot">
+            </div>
+        </div>
+        <br>
+        <div>
+            <button type="button" class="btn" onclick="GerarJogos()">Gerar Jogos</button>
+            <button type="button" class="btn" onclick="GerarNovosJogos()">Gerar Novamente</button>
+            <button type="button" class="btn" onclick="LimparJogos()">Limpar Jogos</button>
+        </div>
+        <hr>
+        <div class="containerSortExample">
+            <div id="sortExample">Sorteados</div>
+            <button type="button" class="btn" onclick="LimparTudo()">Limpar Tudo</button>
+            <div id="sortExample2">Não sorteados</div>
+        </div>
+        <hr>
+        <div class="Jogos">
+            <div id="resultNumbersRandom">
+                
+            </div>
+        </div>
+
+    </section>
+    <br>
+    <footer>
+        <p>&copy; OrbeDevelopment</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

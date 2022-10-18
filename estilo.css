@@ -1,0 +1,156 @@
+body {
+    background: rgb(223, 218, 218);
+    font: normal 15pt Arial;
+}
+
+header {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+#navbar {
+    background: rgb(226, 207, 207);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+#addButton {
+    margin-top: 10px;
+}
+
+#section1 {
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 1000px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+.btn {
+    background: #e2cfcf;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.363);
+    height: 35px;
+}
+
+select#flista {
+    width: 320px;
+}
+
+select#flista2 {
+    width: 320px;
+}
+/* 
+#section2 {
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 700px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+} */
+
+#select-dezenas {
+    width: 70px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+#input-jogos {
+    width: 70px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+footer {
+    color: rgb(41, 41, 41);
+    text-align: center;
+    font-style: italic;
+}
+
+#fnum {
+    width: 100px;
+    height: 35px;
+}
+
+#res {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.teclas {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    width: 300px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.teclas>div {
+    width: 40px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+#sortExample {
+    width: 150px;
+    height: 25px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: rgb(226, 207, 207);
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+#resultNumbersRandom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#sortExample2 {
+    width: 150px;
+    height: 25px;
+    margin: auto;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+.containerSortExample {
+    display: flex;
+}
+
+.containerInputsDezenasJogos {
+    display: flex;
+}
+
+.selectNumbersList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 100px;
+}
+
+.Jogos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    row-gap: 10px;
+    column-gap: 30px;
+}
